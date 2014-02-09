@@ -36,7 +36,10 @@ In the meantime, as a workaround, sets can be modeled as maps.
     case Class2(val b: List[Class3])
     case Class3(val c: Int)
 
-`Class1(Class2(List(Class3(42), Class3(43)))` would be decomposed into the following key-value pairs:
+`Class1(
+  a=Class2(
+    b=List(Class3(c=42),
+           Class3(c=43)))` would be decomposed into the following key-value pairs:
 
 `a/b/@0/c/ -> 42`  
 `a/b/@1/c/ -> 43`
