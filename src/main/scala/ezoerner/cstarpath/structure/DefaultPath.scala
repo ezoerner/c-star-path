@@ -21,7 +21,7 @@ object DefaultPath {
   /** Create a DefaultPath from an integer index */
   def fromIndex(i: Int): Path = new DefaultPath(List(ListIndexPrefix.toString + i))
 
-  def fromEncodedPathString(s: String): Path = new DefaultPath(s.split(PathDelimiterChar).toList)
+  def fromEncodedPathString(s: String): Path = new DefaultPath((s split PathDelimiterChar).toList.filterNot(_.isEmpty))
 
   def getListIndex(pathElement: String): Int =
     if (pathElement.isEmpty || !pathElement.startsWith(ListIndexPrefix.toString))
