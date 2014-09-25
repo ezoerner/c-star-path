@@ -1,6 +1,6 @@
 The original C* Path project was written in Java and was located at github.com ebuddy/c-star-path.
-Although the ebuddy github account is now closed, the Java project can still be found on github
-at [ezoerner/c-star-path-j](https://github.com/ezoerner/c-star-path-j).
+Although the ebuddy github account is now closed, the Java project can still be found on bitbucket
+at [ezoerner/c-star-path-j](https://bitbucket.org/ezoerner/c-star-path-j).
 
 The project located here is a port in progress to Scala.
 Because this port is forward-looking, the Cassandra Thrift API is not supported, only CQL.
@@ -70,4 +70,3 @@ To use structured data in a CQL3 table, the following data modeling rules apply:
 
 Note: The tests include system tests that run an embedded Cassandra.
 These tests are in the "system" TestNG test group.
-
